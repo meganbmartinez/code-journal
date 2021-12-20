@@ -15,9 +15,46 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-  </header>
   <main>
+    <div class="container" data-view="entry-form">
+      <header class="row">
+        <h1>Code Journal</h1>
+      </header>
+      <div class="row">
+        <div class="column col-one-half">
+          <h2>New Entry</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-one-third col-small-sixth">
+          <img src="images/placeholder-image-square.jpg">
+        </div>
+        <div class="column-one-third padding-left col-small-sixth">
+          <div class="label">
+            <label for="title">Title</label>
+          </div>
+          <input type="text" class="margin-bottom padding-right-box padding-bottom-box" name="title"/>
+          <div class="label">
+            <label for="photo">Photo URL</label>
+          </div>
+          <input type="text" name="photo" class="padding-right-box padding-bottom-box"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column margin-top col-small-sixth">
+          <div class="label">
+            <label for="notes">Notes</label>
+          </div>
+          <textarea name="notes" class="padding-right-box padding-bottom-box" cols="58" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="row submit col-small-sixth">
+        <div class="column margin-top ">
+          <input type="submit" value="SAVE" class="button" />
+        </div>
+      </div>
+    </div>
+
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
