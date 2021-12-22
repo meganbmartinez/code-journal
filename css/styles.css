@@ -1,0 +1,55 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Mukta, sans-serif;
+  letter-spacing: 00.05rem;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.header-margin {
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.image-container {
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #bcbcbc;
+}
+
+.input-border {
+  font-family: Mukta, sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #bcbcbc;
+  margin: 10px 0 20px;
+  padding: 10px;
+}
+
+.input-border:focus {
+  outline-color: #562b81;
+}
+
+.label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.new-entry-title {
+  margin: 10px 0;
+}
+
+.purple-bg {
+  background-color: #562b81;
+  color: white;
+}
+
+.save-btn {
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
