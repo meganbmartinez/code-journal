@@ -10,51 +10,51 @@
     crossorigin="anonymous"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main>
-    <div class="container" data-view="entry-form">
-      <header class="row">
-        <h1>Code Journal</h1>
-      </header>
+  <header class="purple-bg">
+    <div class="container">
       <div class="row">
-        <div class="column col-one-half">
-          <h2>New Entry</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-one-third">
-          <img src="images/placeholder-image-square.jpg">
-        </div>
-        <div class="column-one-third padding-left">
-          <div class="label">
-            <label for="title">Title</label>
-          </div>
-          <input type="text" class="margin-bottom padding-right-box padding-bottom-box" name="title"/>
-          <div class="label">
-            <label for="photo">Photo URL</label>
-          </div>
-          <input type="text" name="photo" class="padding-right-box padding-bottom-box"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column margin-top">
-          <div class="label">
-            <label for="notes">Notes</label>
-          </div>
-          <textarea name="notes" class="padding-right-box padding-bottom-box" cols="58" rows="5"></textarea>
-        </div>
-      </div>
-      <div class="row submit">
-        <div class="column margin-top ">
-          <input type="submit" value="SAVE" class="button" />
+        <div class="column-full">
+          <h3 class="header-margin">Code Journal</h3>
         </div>
       </div>
     </div>
-
+  </header>
+  <main>
+    <div class="container">
+      <form id="entry-form" data-view="entry-form">
+        <div class="row">
+          <div class="column-full">
+            <h1 class="new-entry-title">New Entry</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-half">
+            <img class="column-full image-container" src="images/placeholder-image-square.jpg" alt="journal-image">
+          </div>
+          <div class="column-half">
+            <label class="label">Title</label>
+            <input class="column-full input-border" type="text" name="title" id="title" required>
+            <label class="label">Photo URL</label>
+            <input class="column-full input-border photoUrl" type="text" name="photoUrl" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full">
+            <label class="label">Notes</label>
+            <textarea class="column-full input-border" id="notes" name="notes" rows="6" required></textarea>
+          </div>
+          <div class="column-full align-right">
+            <button type="submit" class="purple-bg save-btn">SAVE</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
