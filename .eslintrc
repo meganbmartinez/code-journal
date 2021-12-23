@@ -12,11 +12,11 @@
     "standard"
   ],
   "rules": {
+    "no-var": "off",
     "semi": [
       "error",
       "always"
     ],
-    "no-var": "off",
     "padded-blocks": "off",
     "arrow-parens": [
       "error",

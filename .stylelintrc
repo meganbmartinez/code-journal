@@ -8,9 +8,6 @@
     "stylelint-config-standard"
   ],
   "rules": {
-    "alpha-value-notation": null,
-    "color-function-notation": null,
-    "declaration-block-no-redundant-longhand-properties": null,
     "no-empty-source": null
   }
 }
