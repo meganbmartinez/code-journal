@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.view {
+  display: block;
+}
+
 .container {
   max-width: 575px;
   margin: 0 auto;
@@ -13,9 +17,51 @@
   flex-wrap: wrap;
 }
 
+.align-center {
+  text-align: center;
+}
+
+.align-end {
+  text-align: end;
+}
+
 .column-full,
 .column-half {
   width: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: end;
+}
+
+.margin-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-small {
+  margin-top: 0.3rem;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,5 +76,9 @@
 
   .column-half {
     width: 50%;
+  }
+
+  .padding-left {
+    padding-left: 0.75rem;
   }
 }

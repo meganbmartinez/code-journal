@@ -1,55 +1,79 @@
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
-  background-color: #f0f0f0;
   font-family: Mukta, sans-serif;
-  letter-spacing: 00.05rem;
 }
 
-.align-right {
-  text-align: right;
+button {
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
 }
 
-.header-margin {
-  font-weight: 100;
-  margin: 10px 0;
-}
-
-.image-container {
-  padding: 0;
-  border-radius: 5px;
-  border: 1px solid #bcbcbc;
-}
-
-.input-border {
-  font-family: Mukta, sans-serif;
-  font-size: 18px;
-  border-radius: 5px;
-  border: 1px solid #bcbcbc;
-  margin: 10px 0 20px;
-  padding: 10px;
-}
-
-.input-border:focus {
-  outline-color: #562b81;
-}
-
-.label {
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.new-entry-title {
-  margin: 10px 0;
-}
-
-.purple-bg {
-  background-color: #562b81;
+button,
+header {
+  background-color: #562a80;
   color: white;
 }
 
-.save-btn {
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
+h3 {
+  font-weight: 100;
+}
+
+img {
+  height: 300px;
+  object-fit: fill;
+  width: 100%;
+}
+
+.input-text {
+  padding: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.new-button {
+  width: 50px;
+  height: 30px;
+  background-color: #562a80;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-button {
+  width: 60px;
+  height: 30px;
+  background-color: #562a80;
+  color: white;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 150px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.user-input {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
+
+.user-input:focus {
+  outline: none;
+  border-color: #562a80;
 }
