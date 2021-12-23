@@ -52,7 +52,7 @@ function handleSubmit(event) {
     entryId: data.nextEntryId
   };
 
-  if (data.edit !== null) {
+  if (data.editing !== null) {
     for (var i = 0; i < data.entries.length; i++) {
       if (data.entries[i].entryId === data.editing.entryId) {
         data.entries[i].title = newEntry.title;
@@ -62,7 +62,7 @@ function handleSubmit(event) {
       }
     }
 
-    var replaceEntry = document.querySelector('li[data-entry-id' + '=' + '"' + data.edit.entryId + '"' + ']');
+    var replaceEntry = document.querySelector('li[data-entry-id' + '=' + '"' + data.editing.entryId + '"' + ']');
     replaceEntry.replaceWith(editedEntry);
   } else {
     data.nextEntryId++;
@@ -76,7 +76,7 @@ function handleSubmit(event) {
   $form.reset();
   $img.setAttribute('src', 'images/placeholder-image-square.jpg');
   switchViews('entries');
-  data.edit = null;
+  data.editing = null;
 }
 
 function renderEntry(entry) {
@@ -141,13 +141,13 @@ $entryList.addEventListener('click', function clickEdit(event) {
   switchViews('entry-form');
   for (var i = 0; i < data.entries.length; i++) {
     if (JSON.stringify(data.entries[i].entryId) === (event.target.closest('li').getAttribute('data-entry-id'))) {
-      data.edit = data.entries[i];
+      data.editing = data.entries[i];
     }
   }
-  $title.value = data.edit.title;
-  $photoUrl.value = data.edit.photoUrl;
+  $title.value = data.editing.title;
+  $photoUrl.value = data.editing.photoUrl;
   $img.setAttribute('src', $photoUrl.value);
-  $notes.value = data.edit.notes;
+  $notes.value = data.editing.notes;
   $pageTitle.textContent = 'Edit Entry';
   $deleteButton.className = 'delete-button view';
 });
