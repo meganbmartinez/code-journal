@@ -2,10 +2,25 @@ body {
   font-family: Mukta, sans-serif;
 }
 
-header,
 button {
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+  width: 50px;
+}
+
+button,
+header {
   background-color: #562a80;
   color: white;
+}
+
+.cancel-btn {
+  background-color: #B6B6B6;
+}
+
+.confirm-btn {
+  background-color: #FD3838;
 }
 
 img {
@@ -16,13 +31,6 @@ img {
 
 textarea {
   height: 150px;
-}
-
-button {
-  width: 50px;
-  border-radius: 3px;
-  border: none;
-  height: 25px;
 }
 
 a,
@@ -103,4 +111,12 @@ p {
   background-color: #562a80;
   color: white;
   border-radius: 3px;
+}
+
+.modal {
+
+}
+
+.overlay {
+
 }
