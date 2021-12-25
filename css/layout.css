@@ -1,5 +1,8 @@
 .align-center {
-  text-align: center;
+  align-items: center;
+}
+.align-end {
+  text-align: end;
 }
 
 .column-full,
@@ -11,7 +14,6 @@
   max-width: 575px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  position: relative;
 }
 
 .hidden {
@@ -57,29 +59,17 @@
   justify-content: space-between;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+
 .view {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.align-items-center {
-  align-items: center;
+.visibility-none {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -98,5 +88,9 @@
 
   .padding-left {
     padding-left: 0.75rem;
+  }
+
+  .padding-right {
+    padding-right: 0.75rem;
   }
 }

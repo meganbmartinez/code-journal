@@ -1,21 +1,12 @@
-body {
-  font-family: Mukta, sans-serif;
-}
-
-header,
-button {
-  background-color: #562a80;
+a {
   color: white;
+  text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-textarea {
-  height: 150px;
+a,
+i,
+button:hover {
+  cursor: pointer;
 }
 
 button {
@@ -25,32 +16,14 @@ button {
   height: 25px;
 }
 
-a,
-i,
-button:hover {
-  cursor: pointer;
-}
-
-label {
-  font-weight: bold;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-h2 {
-  font-size: 30px;
+button,
+header {
+  background-color: #562a80;
+  color: white;
 }
 
 h3 {
-  font-weight: 500;
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  font-weight: 100;
 }
 
 i {
@@ -58,23 +31,57 @@ i {
   font-size: 1.5rem;
 }
 
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+
+label {
+  font-weight: bold;
+}
+
 p {
   width: 100%;
   overflow-wrap: break-word;
 }
 
-.user-input {
-  width: 100%;
-  border: 1px solid #cfcfcf;
+textarea {
+  height: 150px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cancel-button {
+  background-color: #d1d2d4;
+  width: 100px;
+}
+
+.confirm-button {
+  background-color: #fd3939;
+  width: 100px;
+}
+
+.delete-button {
+  background-color: inherit;
+  color: red;
+  text-decoration: underline red;
+  white-space: nowrap;
+  padding: 0;
 }
 
 .input-type-text {
   padding: 0.5rem;
 }
 
-.user-input:focus {
-  outline: none;
-  border-color: #562a80;
+.modal {
+  background-color: white;
+  width: 400px;
+  text-align: center;
+  padding: 2.5rem;
 }
 
 .new-button {
@@ -88,14 +95,18 @@ p {
   align-items: center;
 }
 
-.delete-button {
-  background-color: inherit;
-  color: red;
-  text-decoration: underline red;
-  white-space: nowrap;
-  position: absolute;
-  left: 1rem;
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .save-button {
   width: 60px;
@@ -103,4 +114,14 @@ p {
   background-color: #562a80;
   color: white;
   border-radius: 3px;
+}
+
+.user-input {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
+
+.user-input:focus {
+  outline: none;
+  border-color: #562a80;
 }
