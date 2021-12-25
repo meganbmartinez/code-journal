@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row padding-left">
         <h3>Code Journal</h3>
-        <a href="#" class="entries-button margin-auto margin-left" data-view="entries">Entries</a>
+        <a href="#" class="margin-auto margin-left entries-button" data-view="entries">Entries</a>
       </div>
     </div>
   </header>
@@ -34,11 +34,11 @@
             </div>
           </div>
           <div class="row">
-            <div class="column-half padding-left-0">
+            <div class="column-half padding-left">
               <img src="images/placeholder-image-square.jpg" alt="placeholder-image">
             </div>
-            <div class="column-half padding-right-0">
-              <div class="row margin-top">
+            <div class="column-half padding-right">
+              <div class="row margin-top-1">
                 <label for="title">Title</label>
               </div>
               <div class="row margin-small">
@@ -58,29 +58,30 @@
             </div>
           </div>
           <div class="row">
-            <div class="column-full margin-top-small">
+            <div class="column-full margin-small">
               <textarea id="notes" name="notes" class="user-input" required></textarea>
             </div>
           </div>
-          <div class="row margin-auto justify-end">
-            <button class="delete-button hidden">Delete Entry</button>
-            <button data-view="entries" class="save-button">SAVE</button>
+          <div class="row  margin-bottom margin-top padding-left padding-right space-between">
+            <button type="button" class="delete-button visibility-none">Delete Entry</button>
+            <button type="submit" data-view="entries" class="save-button">SAVE</button>
           </div>
         </div>
       </form>
     </div>
     <div data-view="entries" class="view hidden">
       <div class="container">
-        <div class="row space-between padding-left">
-          <h2>Entries</h2>
-          <a href="#" class="new-button margin-auto align-center new-button" data-view="entry-form">NEW</a>
+        <div class="row padding-left space-between ">
+          <h1>Entries</h1>
+          <a href="#" class="new-button margin-auto text-align-center" data-view="entry-form">NEW</a>
         </div>
         <div class="row justify-center">
           <span class="entries-none">
             No entries have been recorded.
           </span>
         </div>
-        <ul class="entry-list"></ul>
+        <ul class="entry-list">
+        </ul>
       </div>
     </div>
   </main>
@@ -88,11 +89,13 @@
     <div class="overlay hidden">
       <div class="modal">
         <div class="row">
-          <p>Are you sure you want to delete this entry?</p>
+          <p>
+            Are you sure you want to delete this entry?
+          </p>
         </div>
-        <div class="row margin-top space-between">
-          <button class="cancel-btn">CANCEL</button>
-          <button class="confirm-btn">CONFIRM</button>
+        <div class="row space-between margin-top">
+          <button class="cancel-button">CANCEL</button>
+          <button class="confirm-button">CONFIRM</button>
         </div>
       </div>
     </div>
