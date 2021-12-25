@@ -18,7 +18,9 @@ var $photoUrl = document.querySelector('#url');
 var $showNodeList = document.querySelectorAll('.view');
 var $title = document.querySelector('#title');
 
-function handleCancelButton(event) {}
+function handleCancelButton(event) {
+  $overlay.className = 'hidden';
+}
 
 function handleConfirmButton(event) {}
 
