@@ -41,7 +41,9 @@ function handleConfirmButton(event) {
   switchViews('entries');
 }
 
-function handleDeleteButton(event) {}
+function handleDeleteButton(event) {
+  $overlay.className = 'overlay view';
+}
 
 function handleEntryButton(event) {
   switchViews('entries');
